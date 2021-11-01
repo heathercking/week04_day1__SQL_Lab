@@ -34,6 +34,8 @@ SELECT name FROM people;
 UPDATE people SET name = 'Krusty The Clown' WHERE name = 'Crusty the Clown';
 SELECT * FROM people;
 
+<!-- you should really delete by ID incase there is a name with the genuine alternative spelling -->
+
 
 4.  Return ONLY Homer Simpson's name from the 'people' table.
 SELECT name FROM people WHERE name = 'Homer Simpson';
@@ -84,3 +86,6 @@ DELETE FROM movies WHERE title IN ('Iron Man', 'Iron Man 2');
 SELECT * FROM movies;
 
 or remove by title... use IN and the key you want to identify by.
+
+OR
+DELETE FROM table WHERE name = '' OR name = '';
